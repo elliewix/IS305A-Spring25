@@ -33,7 +33,7 @@ print("how many alnum names", len(only_alnum_names))
 
 # 2 things to have first: headers and a 2d list of data
 
-with open('alnum_failures.csv', 'wt', encoding='utf-8') as outfile:
+with open('alnum_failures.csv', 'wt', encoding='utf-8', newline="") as outfile:
     csvout = csv.writer(outfile)
     csvout.writerow(headers)
     csvout.writerows(bad_alnum_rows)

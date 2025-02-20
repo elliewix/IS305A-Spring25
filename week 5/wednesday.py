@@ -45,4 +45,4 @@ import pathlib
 for filename, content in data.items():
     print(filename, content)
     p = pathlib.Path(filename)
-    p.write_text(content)
+    p.write_text(content, encoding='utf-8')
